@@ -9,7 +9,7 @@ Widget used to show a button that shows a progress circle when being clicked and
 - Disable the button
 
 ## Typical usage scenario
-- When you have a long running microflow after a button and want to show that the microflow is busy, but do not want to freeze the complete screen.
+- When you have a long running microflow after a button and want to show that the microflow is busy and freeze the button, but do not want to freeze the complete screen.
 - When you want to provide feedback (whether it was a success or not) without showing a popup.
 
 ## Configuration
