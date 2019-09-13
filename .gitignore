@@ -1,3 +1,9 @@
 dist/
 node_modules/
 *.log
+Test/deployment/
+Test/javascriptsource/
+Test/javasource/
+Test/resources/
+Test/theme/
+Test/userlib/
