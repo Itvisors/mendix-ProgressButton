@@ -1,18 +1,22 @@
-import { Component, createElement } from "react";
+import { createRef, Component, createElement } from "react";
 import { hot } from "react-hot-loader/root";
 
 import { ProgressButtonUI } from "./components/ProgressButtonUI";
 import "./ui/ProgressButton.css";
+import "./ui/ProgressButtonTypes.css";
 
 class ProgressButton extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            buttonState: ''
+            buttonState: '',
+            buttonWidth: null,
+            buttonHeight: null         
         };
         this.onButtonClick = this.clickButton.bind(this);
         this.onError = this.errorAction.bind(this);
         this.onSuccess = this.successAction.bind(this);
+        this.progressButton = createRef();
     }
 
     componentDidUpdate (prevProps) {
@@ -38,11 +42,19 @@ class ProgressButton extends Component {
     }
 
     clickButton() {
-        // Execute the onclick action if there is one
-        if (this.props.onClickAction && this.props.onClickAction.canExecute) {
-            //switch layout to loading, untill this.props.actionSucceeded is changed
-            this.setState({buttonState: 'loading'});
-            this.props.onClickAction.execute();
+        //check if button not already clicked
+        if (this.state.buttonState === '') {
+            //Get height and width of button, and set, such that other views have the same dimensions
+            var height = this.progressButton.current.clientHeight;
+            var width = this.progressButton.current.clientWidth;
+            this.setState({buttonWidth: width});
+            this.setState({buttonHeight: height});
+            // Execute the onclick action if there is one
+            if (this.props.onClickAction && this.props.onClickAction.canExecute) {
+                //switch layout to loading, untill this.props.actionSucceeded is changed
+                this.setState({buttonState: 'loading'});
+                this.props.onClickAction.execute();
+            }
         }
     }
 
@@ -61,15 +73,44 @@ class ProgressButton extends Component {
     }
 
     render() {
-        return <ProgressButtonUI 
-            buttonText = {this.props.buttonText.value}
-            buttonState = {this.state.buttonState}
-            onButtonClick = {this.onButtonClick}
-            durationError = {this.props.durationError}
-            durationSuccess = {this.props.durationSuccess}
-            onError = {this.onError}
-            onSuccess = {this.onSuccess} 
-        />;
+        //determine classes (also get mendix classes)
+        var className = this.props.buttonType + 'pb ' + this.props.class;
+        var buttonStyle = {};
+        //determine width if not yet initialized
+        if (this.state.buttonWidth === null) {
+            var buttonWidth = '';
+            if (this.props.buttonWidth === 'fitcontent') {
+                buttonWidth = 'fit-content';
+            } else if (this.props.buttonWidth === 'fullwidth') {
+                buttonWidth = '100%';
+            } else if (this.props.buttonWidth === 'pixels') {
+                buttonWidth = this.props.percentageOrPixels + 'px';
+            } else {
+                buttonWidth = this.props.percentageOrPixels + '%';
+            }
+            buttonStyle.width = buttonWidth;
+        } else {
+            buttonStyle.width = this.state.buttonWidth;
+        }
+        if (this.state.buttonHeight !== null) {
+            buttonStyle.height =  this.state.buttonHeight
+        }
+
+        return <div 
+            className = {className}
+            style = {buttonStyle}
+            ref = {this.progressButton}
+            >
+            <ProgressButtonUI 
+                buttonText = {this.props.buttonText.value}
+                buttonState = {this.state.buttonState}
+                onButtonClick = {this.onButtonClick}
+                durationError = {this.props.durationError}
+                durationSuccess = {this.props.durationSuccess}
+                onError = {this.onError}
+                onSuccess = {this.onSuccess} 
+            />
+        </div>;
     }
 }
 

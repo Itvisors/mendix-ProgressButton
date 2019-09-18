@@ -1,30 +1,40 @@
 /*
 Place your custom CSS here
 */
+
 .pb-container {
   display: inline-block;
   text-align: center;
   width: 100%;
+  height: 100%;
 }
 .pb-container .pb-button {
-  background: transparent;
-  border: 2px solid currentColor;
-  border-radius: 27px;
-  color: currentColor;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 0.6em 1em;
   cursor: pointer;
-  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-align: center;
-  height: 40px;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 4px;
+  background-color: #fff;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-style:solid;
+  border-width: 1px;
   width: 100%;
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
-  transition: background-color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s, border-radius 0.3s;
-}
-.pb-container .pb-button span {
-  display: inherit;
-  transition: opacity 0.3s 0.1s;
-  font-size: 16px;
-  font-weight: 100;
+  height: 100%;
 }
 .pb-container .pb-button svg {
   height: 40px;
@@ -53,14 +63,18 @@ Place your custom CSS here
 .pb-container.disabled .pb-button {
   cursor: not-allowed;
 }
-.pb-container.loading .pb-button {
+.pb-container.loading .pb-button, .pb-container.loading .pb-button:hover, .pb-container.loading .pb-button:focus, .pb-container.loading .pb-button:active {
   width: 40px;
+  border-radius: 27px;
+  height: 40px;
   border-width: 6.5px;
   border-color: #ddd;
+  color: #0595DB;
   cursor: wait;
   background-color: transparent;
   padding: 0;
 }
+
 .pb-container.loading .pb-button span {
   transition: all 0.15s;
   opacity: 0;
@@ -70,9 +84,11 @@ Place your custom CSS here
   transition: opacity 0.15s 0.3s;
   opacity: 1;
 }
-.pb-container.success .pb-button {
-  border-color: #A0D468;
-  background-color: #A0D468;
+.pb-container.success .pb-button,  .pb-container.success .pb-button:hover, .pb-container.success .pb-button:focus, .pb-container.success .pb-button:active {
+  color: #fff;
+  border-color: #76CA02;
+  background-color: #76CA02;
+  pointer-events: none;
 }
 .pb-container.success .pb-button span {
   transition: all 0.15s;
@@ -82,9 +98,11 @@ Place your custom CSS here
 .pb-container.success .pb-button .pb-checkmark > path {
   opacity: 1;
 }
-.pb-container.error .pb-button {
-  border-color: #ED5565;
-  background-color: #ED5565;
+.pb-container.error .pb-button, .pb-container.error .pb-button:hover, .pb-container.error .pb-button:focus, .pb-container.error .pb-button:ative {
+  color: #fff;
+  border-color: #ED1C24;
+  background-color: #ED1C24;
+  pointer-events: none;
 }
 .pb-container.error .pb-button span {
   transition: all 0.15s;

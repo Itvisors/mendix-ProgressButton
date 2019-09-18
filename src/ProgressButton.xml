@@ -27,6 +27,33 @@
                     <attributeType name="Boolean"/>
                 </attributeTypes>
             </property>
+            <property key="buttonType" type="enumeration" defaultValue="default">
+                <caption>Button type</caption>
+                <description></description>
+                <enumerationValues>
+                    <enumerationValue key="default">Default</enumerationValue>
+                    <enumerationValue key="primary">Primary</enumerationValue>
+                    <enumerationValue key="inverse">Inverse</enumerationValue>
+                    <enumerationValue key="info">Info</enumerationValue>
+                    <enumerationValue key="success">Success</enumerationValue>
+                    <enumerationValue key="warning">Warning</enumerationValue>
+                    <enumerationValue key="danger">Danger</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="buttonWidth" type="enumeration" defaultValue="fitcontent">
+                <caption>Button width</caption>
+                <description>How to determine the width of the button</description>
+                <enumerationValues>
+                    <enumerationValue key="fitcontent">Fit-content</enumerationValue>
+                    <enumerationValue key="fullwidth">Full-width</enumerationValue>
+                    <enumerationValue key="pixels">Pixels</enumerationValue>
+                    <enumerationValue key="percentage">Percentage</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="percentageOrPixels" type="integer" required="true" defaultValue="100">
+                <caption>Percentage / pixels</caption>
+                <description></description>
+            </property>
         </propertyGroup>
         <propertyGroup caption="Events">
             <property key="onClickAction" type="action" required="true">

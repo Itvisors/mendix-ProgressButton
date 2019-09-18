@@ -14,6 +14,7 @@ export class ProgressButtonUI extends Component {
             durationSuccess = {this.props.durationSuccess}
             onError = {this.props.onError}
             onSuccess = {this.props.onSuccess}
+            controlled = 'true'
             >
                 {this.props.buttonText}
             </ProgressButton>;
