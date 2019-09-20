@@ -98,7 +98,7 @@ Place your custom CSS here
 .pb-container.success .pb-button .pb-checkmark > path {
   opacity: 1;
 }
-.pb-container.error .pb-button, .pb-container.error .pb-button:hover, .pb-container.error .pb-button:focus, .pb-container.error .pb-button:ative {
+.pb-container.error .pb-button, .pb-container.error .pb-button:hover, .pb-container.error .pb-button:focus, .pb-container.error .pb-button:active {
   color: #fff;
   border-color: #ED1C24;
   background-color: #ED1C24;

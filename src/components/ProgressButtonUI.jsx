@@ -4,7 +4,7 @@ import ProgressButton from 'react-progress-button'
 export class ProgressButtonUI extends Component {
     constructor(props) {
         super(props);
-      }
+    }
 
     render() {
         return <ProgressButton 

@@ -22,7 +22,7 @@ class ProgressButton extends Component {
     componentDidUpdate (prevProps) {
         // If component is currently in state loading, the button has been clicked before. 
         // Check whether the prop actionSucceeded did change and change the state
-        if (this.state.buttonState === 'loading' && this.props.actionSucceeded !== prevProps.actionSucceeded){
+        if (this.state.buttonState === 'loading' && this.props.actionSucceeded.value !== prevProps.actionSucceeded.value){
             if (this.props.actionSucceeded.value === 'success') {
                 this.setState({buttonState: 'success'});
             } else if (this.props.actionSucceeded.value === 'error') {
@@ -44,14 +44,14 @@ class ProgressButton extends Component {
     clickButton() {
         //check if button not already clicked
         if (this.state.buttonState === '') {
-            //Get height and width of button, and set, such that other views have the same dimensions
+            //Get height and width of button, and set them to the state, such that render can use these dimensions
             var height = this.progressButton.current.clientHeight;
             var width = this.progressButton.current.clientWidth;
             this.setState({buttonWidth: width});
             this.setState({buttonHeight: height});
             // Execute the onclick action if there is one
             if (this.props.onClickAction && this.props.onClickAction.canExecute) {
-                //switch layout to loading, untill this.props.actionSucceeded is changed
+                //Switch layout to loading, untill this.props.actionSucceeded is changed
                 this.setState({buttonState: 'loading'});
                 this.props.onClickAction.execute();
             }
@@ -63,6 +63,8 @@ class ProgressButton extends Component {
         if (this.props.onError && this.props.onError.canExecute) {
             this.props.onError.execute();
         }
+        //Set state back to initial value
+        this.setState({buttonState: ''});
     }
 
     successAction() {
@@ -70,11 +72,15 @@ class ProgressButton extends Component {
         if (this.props.onSuccess && this.props.onSuccess.canExecute) {
             this.props.onSuccess.execute();
         }
+        //Set state back to initial value
+        this.setState({buttonState: ''});
     }
 
     render() {
         //determine classes (also get mendix classes)
         var className = this.props.buttonType + 'pb ' + this.props.class;
+        //Intialize style object to set the width and height. 
+        //Height will only be set after the first buttonclick, to make sure it won't change in another state
         var buttonStyle = {};
         //determine width if not yet initialized
         if (this.state.buttonWidth === null) {
@@ -92,6 +98,7 @@ class ProgressButton extends Component {
         } else {
             buttonStyle.width = this.state.buttonWidth;
         }
+        //determine height if not yet initialized
         if (this.state.buttonHeight !== null) {
             buttonStyle.height =  this.state.buttonHeight
         }
