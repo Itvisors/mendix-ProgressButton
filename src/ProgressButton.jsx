@@ -100,8 +100,10 @@ class ProgressButton extends Component {
         }
         //determine height if not yet initialized
         if (this.state.buttonHeight !== null) {
-            buttonStyle.height =  this.state.buttonHeight
+            buttonStyle.height =  this.state.buttonHeight;
         }
+        //set display value to table, since fit-content is not cross-browser compatible
+        buttonStyle.display = 'table';
 
         return <div 
             className = {className}
