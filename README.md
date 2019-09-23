@@ -1,5 +1,5 @@
 ## ProgressButton
-Widget used to show a button that shows a progress circle while the onclick action is running and visualized the outcome of the action. Widget is based on https://github.com/mathieudutour/react-progress-button
+Widget used to show a button that shows a progress circle while the onclick action is running and visualizes the outcome of the action. Widget is based on https://github.com/mathieudutour/react-progress-button
 
 ## Features
 - Visualizes when a microflow is busy by showing a progress circle
