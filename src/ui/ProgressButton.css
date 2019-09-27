@@ -47,7 +47,7 @@ Place your custom CSS here
   opacity: 0;
   fill: none;
 }
-.pb-container .pb-button svg.pb-progress-circle {
+.pb-container.loading .pb-button svg.pb-progress-circle {
   display: inline-block;
   animation: spin 0.9s infinite cubic-bezier(0.085, 0.260, 0.935, 0.710);
 }
