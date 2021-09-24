@@ -5,28 +5,29 @@
   "description": "Small react component that displays a button. It shows a progress circle onclick and visualizes whether the action succeeded or not",
   "copyright": "ITvisors (2019)",
   "author": "Johan Munneke",
+  "engines": {
+    "node": ">=12"
+  },
   "config": {
-    "widgetPath": "./Test/widgets",
     "projectPath": "./Test/",
     "mendixHost": "http://localhost:8080",
     "developmentPort": "3000"
   },
   "packagePath": "itvisors",
   "scripts": {
-    "start": "concurrently \"pluggable-widgets-tools start:server --open\" \"npm:dev\"",
-    "dev": "pluggable-widgets-tools start:js",
-    "build": "pluggable-widgets-tools build:js",
+    "start": "pluggable-widgets-tools start:server --open",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
     "lint": "pluggable-widgets-tools lint",
     "lint:fix": "pluggable-widgets-tools lint:fix",
     "prerelease": "npm run lint",
-    "release": "pluggable-widgets-tools release:js"
+    "release": "pluggable-widgets-tools release:web"
   },
   "license": "Apache-2.0",
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^8.0.0"
+    "@mendix/pluggable-widgets-tools": "^8.18.3"
   },
   "dependencies": {
-    "big.js": "^5.2.2",
     "classnames": "^2.2.6",
     "react-progress-button": "^5.1.0"
   }

@@ -1,11 +1,10 @@
 import { createRef, Component, createElement } from "react";
-import { hot } from "react-hot-loader/root";
 
 import { ProgressButtonUI } from "./components/ProgressButtonUI";
 import "./ui/ProgressButton.css";
 import "./ui/ProgressButtonTypes.css";
 
-class ProgressButton extends Component {
+export default class ProgressButton extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -122,5 +121,3 @@ class ProgressButton extends Component {
         </div>;
     }
 }
-
-export default hot(ProgressButton);
