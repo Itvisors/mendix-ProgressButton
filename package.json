@@ -1,21 +1,22 @@
 {
   "name": "progressbutton",
   "widgetName": "ProgressButton",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Small react component that displays a button. It shows a progress circle onclick and visualizes whether the action succeeded or not",
-  "copyright": "ITvisors (2019)",
+  "copyright": "Aiden (2024)",
   "author": "Johan Munneke",
   "engines": {
-    "node": ">=12"
+    "node": ">=16"
   },
+  "license": "Apache-2.0",
   "config": {
     "projectPath": "./Test/",
     "mendixHost": "http://localhost:8080",
-    "developmentPort": "3000"
+    "developmentPort": 3000
   },
   "packagePath": "itvisors",
   "scripts": {
-    "start": "pluggable-widgets-tools start:server --open",
+    "start": "pluggable-widgets-tools start:server",
     "dev": "pluggable-widgets-tools start:web",
     "build": "pluggable-widgets-tools build:web",
     "lint": "pluggable-widgets-tools lint",
@@ -23,12 +24,19 @@
     "prerelease": "npm run lint",
     "release": "pluggable-widgets-tools release:web"
   },
-  "license": "Apache-2.0",
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^8.18.3"
+    "@mendix/pluggable-widgets-tools": "^10.16.0"
   },
   "dependencies": {
     "classnames": "^2.2.6",
     "react-progress-button": "^5.1.0"
+  },
+  "resolutions": {
+    "react": "^18.2.0",
+    "react-native": "0.72.7"
+  },
+  "overrides": {
+    "react": "^18.2.0",
+    "react-native": "0.72.7"
   }
 }
