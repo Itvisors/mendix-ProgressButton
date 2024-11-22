@@ -50,6 +50,8 @@ Place your custom CSS here
 .pb-container.loading .pb-button svg.pb-progress-circle {
   display: inline-block;
   animation: spin 0.9s infinite cubic-bezier(0.085, 0.260, 0.935, 0.710);
+  margin-top: -20px;
+  margin-left: -20px;
 }
 .pb-container .pb-button svg.pb-progress-circle path {
   stroke: currentColor;
@@ -63,6 +65,7 @@ Place your custom CSS here
 }
 .pb-container.disabled .pb-button {
   cursor: not-allowed;
+  opacity: 1;
 }
 .pb-container.loading .pb-button, .pb-container.loading .pb-button:hover, .pb-container.loading .pb-button:focus, .pb-container.loading .pb-button:active {
   width: 40px;
@@ -70,7 +73,7 @@ Place your custom CSS here
   height: 40px;
   border-width: 6.5px;
   border-color: #ddd;
-  color: #0595DB;
+  color: #0086d9;
   cursor: wait;
   background-color: transparent;
   padding: 0;
@@ -87,8 +90,8 @@ Place your custom CSS here
 }
 .pb-container.success .pb-button,  .pb-container.success .pb-button:hover, .pb-container.success .pb-button:focus, .pb-container.success .pb-button:active {
   color: #fff;
-  border-color: #76CA02;
-  background-color: #76CA02;
+  border-color: #3cb33d;
+  background-color: #3cb33d;
   pointer-events: none;
 }
 .pb-container.success .pb-button span {
@@ -101,8 +104,8 @@ Place your custom CSS here
 }
 .pb-container.error .pb-button, .pb-container.error .pb-button:hover, .pb-container.error .pb-button:focus, .pb-container.error .pb-button:active {
   color: #fff;
-  border-color: #ED1C24;
-  background-color: #ED1C24;
+  border-color: #e33f4e;
+  background-color: #e33f4e;
   pointer-events: none;
 }
 .pb-container.error .pb-button span {
@@ -116,10 +119,10 @@ Place your custom CSS here
 @keyframes spin {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
-    transform-origin: center center;
+    transform-origin: left top;
   }
   to {
     transform: translate(-50%, -50%) rotate(360deg);
-    transform-origin: center center;
+    transform-origin: left top;
   }
 }

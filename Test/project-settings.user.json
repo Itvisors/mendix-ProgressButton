@@ -10,7 +10,73 @@
     {
       "suppressions": [],
       "disabledBestPractices": [],
-      "readRecommendations": [],
+      "readRecommendations": [
+        {
+          "code": "MXP006",
+          "locationObjects": [
+            {
+              "uuid": "82def293-f25b-4b7e-908c-a8917d43e652",
+              "fullPath": "MyFirstModule.ACT_ButtonClicked"
+            },
+            {
+              "uuid": "cf8d9655-4563-4b2f-89c7-7e8f17e454b1",
+              "fullPath": "progressButton1 (CustomWidget) < container2 (DivContainer) < 79f11656-e3eb-49be-acd1-e2a731ac62e0 (LayoutGridColumn) < a7852200-46b4-4fb1-9ba6-5cf31e878f7c (LayoutGridRow) < layoutGrid2 (LayoutGrid) < dataView1 (DataView) < 478f41ff-2957-42fe-b356-85fe83e980ad (LayoutGridColumn) < 42b79996-5620-40c7-b578-18ba8b9ab28b (LayoutGridRow) < layoutGrid1 (LayoutGrid) < 0eb39fea-621f-46a9-8504-deebf7075799 (LayoutCallArgument) < f7f5e7c7-11bf-4933-a928-d3ea1fc87dfc (LayoutCall) < MyFirstModule.Popup"
+            },
+            {
+              "uuid": "ab7911f8-8f22-43c7-b16e-f0fcde39c333",
+              "fullPath": "actionButton7 (ActionButton) < container9 (DivContainer) < 8e9fb976-00c4-43a0-b709-80b81cfee208 (LayoutGridColumn) < 1c97bb0b-4805-44c5-87bf-1db1c66d870a (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 7ff5d1c1-41ae-4879-b4f8-4ae1ac75c200 (LayoutCallArgument) < 5f3927e8-031a-4e84-a5e2-f0603d14fb3c (LayoutCall) < MyFirstModule.Home_Web"
+            },
+            {
+              "uuid": "cd262716-5315-4d38-8f5b-cf05811a220c",
+              "fullPath": "progressButton7 (CustomWidget) < container9 (DivContainer) < 8e9fb976-00c4-43a0-b709-80b81cfee208 (LayoutGridColumn) < 1c97bb0b-4805-44c5-87bf-1db1c66d870a (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 7ff5d1c1-41ae-4879-b4f8-4ae1ac75c200 (LayoutCallArgument) < 5f3927e8-031a-4e84-a5e2-f0603d14fb3c (LayoutCall) < MyFirstModule.Home_Web"
+            },
+            {
+              "uuid": "132c9a79-c004-4c6f-ba06-a1fbf51d802e",
+              "fullPath": "actionButton6 (ActionButton) < container8 (DivContainer) < 8e9fb976-00c4-43a0-b709-80b81cfee208 (LayoutGridColumn) < 1c97bb0b-4805-44c5-87bf-1db1c66d870a (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 7ff5d1c1-41ae-4879-b4f8-4ae1ac75c200 (LayoutCallArgument) < 5f3927e8-031a-4e84-a5e2-f0603d14fb3c (LayoutCall) < MyFirstModule.Home_Web"
+            },
+            {
+              "uuid": "6d7c27cf-928e-40a1-be6c-cdf2e2f75a53",
+              "fullPath": "progressButton6 (CustomWidget) < container8 (DivContainer) < 8e9fb976-00c4-43a0-b709-80b81cfee208 (LayoutGridColumn) < 1c97bb0b-4805-44c5-87bf-1db1c66d870a (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 7ff5d1c1-41ae-4879-b4f8-4ae1ac75c200 (LayoutCallArgument) < 5f3927e8-031a-4e84-a5e2-f0603d14fb3c (LayoutCall) < MyFirstModule.Home_Web"
+            },
+            {
+              "uuid": "291917f1-8359-4b6e-b116-e98e7108b826",
+              "fullPath": "actionButton5 (ActionButton) < container7 (DivContainer) < 8e9fb976-00c4-43a0-b709-80b81cfee208 (LayoutGridColumn) < 1c97bb0b-4805-44c5-87bf-1db1c66d870a (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 7ff5d1c1-41ae-4879-b4f8-4ae1ac75c200 (LayoutCallArgument) < 5f3927e8-031a-4e84-a5e2-f0603d14fb3c (LayoutCall) < MyFirstModule.Home_Web"
+            },
+            {
+              "uuid": "cefb9192-94b4-45ef-bf85-f7ef1c873f4b",
+              "fullPath": "progressButton5 (CustomWidget) < container7 (DivContainer) < 8e9fb976-00c4-43a0-b709-80b81cfee208 (LayoutGridColumn) < 1c97bb0b-4805-44c5-87bf-1db1c66d870a (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 7ff5d1c1-41ae-4879-b4f8-4ae1ac75c200 (LayoutCallArgument) < 5f3927e8-031a-4e84-a5e2-f0603d14fb3c (LayoutCall) < MyFirstModule.Home_Web"
+            },
+            {
+              "uuid": "5b9951c0-e19f-4458-ba80-7dc87357ba9d",
+              "fullPath": "actionButton4 (ActionButton) < container6 (DivContainer) < 8e9fb976-00c4-43a0-b709-80b81cfee208 (LayoutGridColumn) < 1c97bb0b-4805-44c5-87bf-1db1c66d870a (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 7ff5d1c1-41ae-4879-b4f8-4ae1ac75c200 (LayoutCallArgument) < 5f3927e8-031a-4e84-a5e2-f0603d14fb3c (LayoutCall) < MyFirstModule.Home_Web"
+            },
+            {
+              "uuid": "692be8b3-6978-4201-b42d-4c61c9323cf7",
+              "fullPath": "progressButton4 (CustomWidget) < container6 (DivContainer) < 8e9fb976-00c4-43a0-b709-80b81cfee208 (LayoutGridColumn) < 1c97bb0b-4805-44c5-87bf-1db1c66d870a (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 7ff5d1c1-41ae-4879-b4f8-4ae1ac75c200 (LayoutCallArgument) < 5f3927e8-031a-4e84-a5e2-f0603d14fb3c (LayoutCall) < MyFirstModule.Home_Web"
+            },
+            {
+              "uuid": "4d422296-c928-4599-a303-cd03ecb00356",
+              "fullPath": "actionButton3 (ActionButton) < container5 (DivContainer) < 8e9fb976-00c4-43a0-b709-80b81cfee208 (LayoutGridColumn) < 1c97bb0b-4805-44c5-87bf-1db1c66d870a (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 7ff5d1c1-41ae-4879-b4f8-4ae1ac75c200 (LayoutCallArgument) < 5f3927e8-031a-4e84-a5e2-f0603d14fb3c (LayoutCall) < MyFirstModule.Home_Web"
+            },
+            {
+              "uuid": "e8f9cf67-20cd-43bc-bb4b-2b498dee230e",
+              "fullPath": "progressButton3 (CustomWidget) < container5 (DivContainer) < 8e9fb976-00c4-43a0-b709-80b81cfee208 (LayoutGridColumn) < 1c97bb0b-4805-44c5-87bf-1db1c66d870a (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 7ff5d1c1-41ae-4879-b4f8-4ae1ac75c200 (LayoutCallArgument) < 5f3927e8-031a-4e84-a5e2-f0603d14fb3c (LayoutCall) < MyFirstModule.Home_Web"
+            },
+            {
+              "uuid": "6288d084-096d-4ff5-9fd7-419ff2682dcb",
+              "fullPath": "actionButton2 (ActionButton) < container4 (DivContainer) < 8e9fb976-00c4-43a0-b709-80b81cfee208 (LayoutGridColumn) < 1c97bb0b-4805-44c5-87bf-1db1c66d870a (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 7ff5d1c1-41ae-4879-b4f8-4ae1ac75c200 (LayoutCallArgument) < 5f3927e8-031a-4e84-a5e2-f0603d14fb3c (LayoutCall) < MyFirstModule.Home_Web"
+            },
+            {
+              "uuid": "abbec909-8b81-41e2-be2b-1d564e108234",
+              "fullPath": "progressButton1 (CustomWidget) < container4 (DivContainer) < 8e9fb976-00c4-43a0-b709-80b81cfee208 (LayoutGridColumn) < 1c97bb0b-4805-44c5-87bf-1db1c66d870a (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 7ff5d1c1-41ae-4879-b4f8-4ae1ac75c200 (LayoutCallArgument) < 5f3927e8-031a-4e84-a5e2-f0603d14fb3c (LayoutCall) < MyFirstModule.Home_Web"
+            },
+            {
+              "uuid": "c25e04b3-cec1-4565-beb1-ebfc7abf30e4",
+              "fullPath": "actionButton1 (ActionButton) < container3 (DivContainer) < 8e9fb976-00c4-43a0-b709-80b81cfee208 (LayoutGridColumn) < 1c97bb0b-4805-44c5-87bf-1db1c66d870a (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 7ff5d1c1-41ae-4879-b4f8-4ae1ac75c200 (LayoutCallArgument) < 5f3927e8-031a-4e84-a5e2-f0603d14fb3c (LayoutCall) < MyFirstModule.Home_Web"
+            }
+          ]
+        }
+      ],
       "suppressedRecommendations": [],
       "hasShownRecommendationsNotificationForThisApp": true,
       "type": "Mendix.Modeler.MxAssist.PerformanceBot.Serialization.Configuration.PerformanceBotConfiguration, Mendix.Modeler.MxAssist.PerformanceBot.Serialization, Version=10.12.0.0, Culture=neutral, PublicKeyToken=null"

@@ -1,66 +1,66 @@
 /* default button style */
 .defaultpb .pb-button {
-  color: #0595DB;
-  border-color: #ddd;
+  color: #264ae5;
+  border-color: #e7e7e9;
   background-color: #fff;
 }
 
 .defaultpb .pb-button:hover, .defaultpb .pb-button:focus, .defaultpb .pb-button:active{
-  color: #0595DB;
-  border-color: #ddd;
-  background-color: #ddd;
+  color: #264ae5;
+  border-color: #e7e7e9;
+  background-color: #e7e7e9;
 }
 
 /* Primary button style */
 .primarypb .pb-button {
   color: #fff;
-   border-color: #0595DB;
-   background-color: #0595DB;
+  border-color: #264ae5;
+  background-color: #264ae5;
 }
 
 .primarypb .pb-button:hover, .primarypb .pb-button:focus, .primarypb .pb-button:active{
   color: #fff;
-  border-color: #0477af;
-  background-color: #0477af;
+  border-color: #1e3bb7;
+  background-color: #1e3bb7;
 }
 
 /* Inverse button style */
 .inversepb .pb-button {
   color: #fff;
-  border-color: #252C36;
-  background-color: #252C36;
+  border-color: #24276c;
+  background-color: #24276c;
 }
 
 .inversepb .pb-button:hover, .inversepb .pb-button:focus, .inversepb .pb-button:active{
   color: #fff;
-  border-color: #51565e;
-  background-color: #51565e;
+  border-color: #505289;
+  background-color: #505289;
 }
 
 /* Info button style */
 .infopb .pb-button {
   color: #fff;
-  border-color: #48B0F7;
-   background-color: #48B0F7;
+  border-color: #0086d9;
+  background-color: #0086d9;
 }
 
 .infopb .pb-button:hover, .infopb .pb-button:focus, .infopb .pb-button:active{
   color: #fff;
-  border-color: #3a8dc6;
-  background-color: #3a8dc6;
+  border-color: #006bae;
+  background-color: #006bae;
 }
 
 /* Success button style */
 .successpb .pb-button {
   color: #fff;
-  border-color: #76CA02;
-  background-color: #76CA02;
+  border-color: #3cb33d;
+  background-color: #3cb33d;
 }
 
 .successpb .pb-button:hover, .successpb .pb-button:focus, .successpb .pb-button:active{
   color: #fff;
-  border-color: #5ea202;
-  background-color: #5ea202;
+  border-color: #308f31;
+  background-color: #308f31;
 }
 
 /* Warning button style */
@@ -72,19 +72,19 @@
 
 .warningpb .pb-button:hover, .warningpb .pb-button:focus, .warningpb .pb-button:active{
   color: #fff;
-  border-color: #c77c17;
-  background-color: #c77c17;
+  border-color: #bd8416;
+  background-color: #bd8416;
 }
 
 /* Danger button style */
 .dangerpb .pb-button {
   color: #fff;
-  border-color: #ED1C24;
-  background-color: #ED1C24;
+  border-color: #e33f4e;
+  background-color: #e33f4e;
 }
 
 .dangerpb .pb-button:hover, .dangerpb .pb-button:focus, .dangerpb .pb-button:active{
   color: #fff;
-  border-color: #be161d;
-  background-color: #be161d;
+  border-color: #b6323e;
+  background-color: #b6323e;
 }

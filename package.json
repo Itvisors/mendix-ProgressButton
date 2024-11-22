@@ -28,8 +28,7 @@
     "@mendix/pluggable-widgets-tools": "^10.16.0"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
-    "react-progress-button": "^5.1.0"
+    "classnames": "^2.2.6"
   },
   "resolutions": {
     "react": "^18.2.0",
